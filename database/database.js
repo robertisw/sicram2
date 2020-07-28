@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { database } = require('./key');
 
 mongoose.set('useFindAndModify', false);
-mongoose.connect(database.URI, {
+mongoose.connect('mongodb+srv://rpopi:holamundo2020@cluster0.uemjr.azure.mongodb.net/test?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true 
 })
